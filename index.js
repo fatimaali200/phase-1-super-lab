@@ -7,7 +7,6 @@ class Tree{
     }
 }
 const tree = new Tree( 'Maple' );
-console.log(Tree.definition())
 
 //-----------------------------------------
 class Deciduous extends Tree{
