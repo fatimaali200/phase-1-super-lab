@@ -9,6 +9,7 @@ class Tree{
 const tree = new Tree( 'Maple' );
 console.log(Tree.definition())
 
+//-----------------------------------------
 class Deciduous extends Tree{
     constructor(species , name){
         super(species);
@@ -22,3 +23,16 @@ class Deciduous extends Tree{
     
 }
 const  oak = new Deciduous( 'Oak', 'Professor' );
+//--------------------------------------------------
+class Evergreen extends Tree{
+    constructor(species , name){
+        super(species);
+        this.name=name;
+    }
+    static definition() {
+        return (
+          super.definition() + " Evergreens keep their leaves all year round."
+        );
+    }
+}
+const  fir = new Evergreen( 'Fir', 'Douglas' )
